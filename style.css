@@ -1,0 +1,88 @@
+body {
+    background-color: #f0f0e8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kreasiah {
+    border: 2px solid black;
+    padding: 8px 12px;
+    font-weight: bold;
+    background: white;
+}
+
+/* INI PANAH GEDE YANG GABUNG */
+.panah-gabung {
+    background-color: #0070ff; /* biru lebih gelap biar mirip foto */
+    color: white;
+    padding: 12px 50px 12px 20px;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%); /* bentuk panah */
+}
+
+.core {
+    color: white;
+}
+
+.bintang-text {
+    color: #ffc107; /* kuning */
+}
+
+.icon-bintang {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffc107;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 3px solid black;
+}
+
+.garis-biru {
+    flex-grow: 1;
+    height: 10px;
+    background: repeating-linear-gradient(45deg, #00bfff, #00bfff 10px, transparent 10px, transparent 20px);
+}
+
+.menu {
+    padding: 5px 20px;
+    border: 2px solid black;
+    background: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.kotak-pesan {
+    border: 3px solid #00bfff;
+    padding: 15px;
+    width: 50%;
+    background: white;
+    color: #333;
+}
