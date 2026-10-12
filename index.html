@@ -2,36 +2,35 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>coreBintang - Versi 1.0</title>
+    <title>coreBintang - Login v1.1</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body-login">
 
-    <div class="header">
-        <p>Versi:1.0 <br> by Rifandy Bintang Pratama</p>
-        
-        <div class="logo">
-            <div class="kreasiah">kreasiah!!!</div>
+    <div class="login-wrapper">
+        <div class="logo-login">
             <div class="panah-gabung">
                 <span class="core">core</span><span class="bintang-text">Bintang</span>
-                <span class="icon-bintang">★</span>
+                
+            </div>
+        </div>
+        <p class="judul-login">login</p>
+
+        <div class="kotak-hitam-login">
+            <label>Nama:</label>
+            <input type="text" id="nama" autocomplete="off">
+            <label>kata sandi:</label>
+            <input type="password" id="sandi">
+            
+            <button class="btn-masuk" onclick="cekLogin()">masuk</button>
+            <p id="pesan-error"></p>
+
+            <div class="pesan-bawah">
+                maaf untuk masuk coreBintang hanya keluarga saya saja untuk yang lain tidak.
             </div>
         </div>
     </div>
 
-    <div class="navbar">
-        <div class="garis-biru"></div>
-        <a href="#" class="menu">beranda</a>
-        <div class="garis-biru"></div>
-    </div>
-
-    <div class="kotak-pesan">
-        <p>halo selamat datang di coreBintang wibesite pertama <br>
-        buatan saya jadi kalian tidak bisa apa semoga bisa <br>
-        berjalan</p>
-        <br>
-        <b>By Rifandy</b>
-    </div>
-
+    <script src="login.js"></script>
 </body>
-</html>
+</html>   
