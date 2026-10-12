@@ -75,14 +75,145 @@ body {
     border: 2px solid black;
     background: white;
     text-decoration: none;
-    color: black;
+    color: black;/* === LOGIN PERSIS FOTO v1.1 === */
+.body-login{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login-wrapper{
+    width: 300px;
+    text-align: center;
+}
+.logo-login{
+    display: flex;
+    justify-content: center;
+    background: #f0f0e8;
+    padding: 10px;
+}
+.judul-login{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.kotak-hitam-login{
+    border: 3px solid black;
+    padding: 15px;
+    text-align: left;
+    background: white;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.kotak-hitam-login label{
+    font-weight: bold;
+    font-size: 16px;
+}
+.kotak-hitam-login input{
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.btn-masuk{
+    border: 3px solid #4444ff;
+    background: white;
+    padding: 6px 18px;
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+}
+#pesan-error{
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.pesan-bawah{
+    margin-top: auto;
+    font-weight: bold;
+    font-size: 12px;
+}
     font-weight: bold;
 }
 
 .kotak-pesan {
     border: 3px solid #00bfff;
     padding: 15px;
-    width: 50%;
+    width: 50%;b
     background: white;
     color: #333;
+}
+.kartu-karya img{
+    width: 100%;
+    max-height: 350px; /* biar gak setinggi monitor */
+    object-fit: contain; /* biar gak ketarik */
+    border: 2px solid black;
+    background: #000; /* biar kayak ruang angkasa */
+    display: block;
+}
+
+/* Tambahan buat preview di upload.html juga */
+#preview{
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border: 3px solid black;
+    background: black;
+}.galeri-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+.kartu-karya{
+    border: 3px solid black;
+    background: white;
+    padding: 10px;
+    overflow: hidden; /* biar foto gak keluar kartu */
+}/* FIX GAMBAR GAK AKAN LUBER LAGI */
+.detail-kartu{
+    border: 3px solid #00bfff;
+    background: white;
+    padding: 15px;
+    width: 55%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.detail-kartu img{
+    width: auto !important;
+    max-width: 100% !important;
+    max-height: 400px !important; /* kunci tingginya! gak boleh lebih dari 400px */
+    height: auto;
+    object-fit: contain;
+    background: black;
+    border: 3px solid black;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* FIX BINTANG KUNING */
+.panah-gabung{
+    background-color: #0070ff !important; /* biru muda kayak foto lu */
+}
+.bintang-text{
+    color: #ffc107!important; /* oranye kayak foto lu, bukan kuning */
+}
+.icon-bintang{
+    color:#ffc107 !important; /* di foto lu bintangnya putih */
+    /* kalau mau kuning ganti jadi #ffc107 */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+}
+
+/* Biar galeri juga gak luber */
+.kartu-karya img{
+    width: 100%;
+    height: 200px !important; /* di galeri cuma 200px aja */
+    object-fit: cover; /* biar rapi kotak */
+    border: 2px solid black;
 }
