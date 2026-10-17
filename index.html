@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>coreBintang - Login v1.1</title>
+    <title>coreBintang - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body-login">
@@ -11,7 +11,6 @@
         <div class="logo-login">
             <div class="panah-gabung">
                 <span class="core">core</span><span class="bintang-text">Bintang</span>
-                
             </div>
         </div>
         <p class="judul-login">login</p>
@@ -21,8 +20,7 @@
             <input type="text" id="nama" autocomplete="off">
             <label>kata sandi:</label>
             <input type="password" id="sandi">
-            
-            <button class="btn-masuk" onclick="cekLogin()">masuk</button>
+                       <button class="btn-masuk" onclick="cekLogin()">masuk</button>
             <p id="pesan-error"></p>
 
             <div class="pesan-bawah">
@@ -31,6 +29,6 @@
         </div>
     </div>
 
-    <script src="login.js"></script>
+    <script type="module" src="login.js"></script>
 </body>
-</html>   
+</html>
